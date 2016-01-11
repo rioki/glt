@@ -1,0 +1,7 @@
+.vs
+/x86
+/x64
+*.opensdf
+*.sdf
+*.user
+*.opendb
