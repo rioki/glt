@@ -1,7 +1,7 @@
 OpenGL Transformation Library
 =============================
 
-There are many cases where you need compute a simple projection or movel-view
+There are many cases where you need to compute a simple projection or model-view
 matrix, but you don't need a full linear algebra library. glt was built
 for exactly this case. It emulates the OpenGL 1.0 transformation functions, 
 but work on float arrays, that can then be passed to GLSL shaders.
@@ -55,7 +55,7 @@ And a view matrix with LookAt works as well:
     glLookAt(modelViewMatrix, -10.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f);
     
 If you want to push and pop, you need to implement that yourself, but to add
-a model bit to the view:
+a model matrix to the view:
 
     glTranslate(modelViewMatrix, 0.0f, 5.0f, 2.0f);
     glRotate(modelViewMatrix, 30.0f, 0.0f, 0.0f);
